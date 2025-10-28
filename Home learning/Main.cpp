@@ -169,7 +169,7 @@ int* arr = new int[size];
     return 0;
 }
 */
-#include <iostream>
+/*#include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <windows.h>
@@ -249,4 +249,175 @@ int main() {
     delete[] arr;
 
     return 0;
+}*/
+/*#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
+using namespace std;
+
+int day1, day2, month1, month2, year1, year2;
+
+void is_y_v() {
+
+    if (year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400 == 0)
+    {
+        cout << "leap year" << endl;
+    }
+
+    else if (year2 % 4 == 0 && year2 % 100 != 0 || year2 % 400 == 0)
+    {
+        cout << "leap year" << endl;
+    }
+
+    else
+    {
+        cout << "no leap year" << endl;
+    }
 }
+
+
+
+
+
+int main() {
+
+    cout << "Enter first date: " << endl << "day: " << endl;
+    cin >> day1;
+    cout <<  "month: " << endl;
+    cin >> month1; 
+    cout <<  "year: " << endl;
+    cin >> year1;
+    cout << "Enter first date: " << endl << "day: " << endl;
+    cin >> day2;
+    cout << "month: " << endl;
+    cin >> month2;
+    cout << "year: " << endl;
+    cin >> year2;
+
+
+    if (day2 > day1)
+    {
+        month1 - 1;
+
+    }
+
+
+
+
+
+
+
+
+    return 0;
+}
+*/
+// task 1 ne dodelal
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
+using namespace std;
+
+
+double Sr_ar(int arr[], int size) {
+
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return (double)sum / size;
+}
+
+
+
+
+
+
+int main() {
+    int size;
+
+
+    cout << "Enter size: " << endl;
+    cin >> size;
+    int* arr = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter elemet: " << endl;
+        cin >> arr[i];
+    }
+
+
+   
+
+    Sr_ar(arr, size);
+
+    
+    cout << "Srednee arifmeticheskoe : " << Sr_ar(arr, size) << endl;
+
+
+
+    return 0;
+}
+*/
+// Task 2
+
+/*#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
+using namespace std;
+
+
+void count_elements(int arr[], int size, int& positive, int& negative, int& zero) {
+    positive = 0;
+    negative = 0;
+    zero = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] > 0) {
+            positive++;
+        }
+        else if (arr[i] < 0) {
+            negative++;
+        }
+        else {
+            zero++;
+        }
+    }
+}
+
+int main() {
+    int size;
+    cout << "Enter size: ";
+    cin >> size;
+    int* arr = new int[size];
+
+    
+    for (int i = 0; i < size; i++) {
+cout << "Enter elemet: " << endl;
+        cin >> arr[i];
+    }
+
+    int positive, negative, zero;
+    count_elements(arr, size, positive, negative, zero);
+
+    cout << "quantity of positive elements: " << positive << endl;
+    cout << "quantity of negative elements: " << negative << endl;
+    cout << "quantity of zero elements: " << zero << endl;
+    delete[] arr;
+    return 0;
+}*/
+// Task 3
+
